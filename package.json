@@ -5,6 +5,7 @@
   "main": "lib/index.js",
   "author": "MikeyBurkman",
   "license": "MIT",
+  "bin": "lib/index.js",
   "scripts": {
     "pretty": "prettier --write --single-quote 'lib/**/*.js'"
   },
