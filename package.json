@@ -1,0 +1,31 @@
+{
+  "name": "fhclogs",
+  "version": "1.0.0",
+  "description": "Utility for more easily viewing logs in FH/RHMAP",
+  "main": "lib/index.js",
+  "author": "MikeyBurkman",
+  "license": "MIT",
+  "scripts": {
+    "pretty": "prettier --write --single-quote 'lib/**/*.js'"
+  },
+  "keywords": [
+    "fh",
+    "fhc",
+    "rhmap",
+    "feedhenry",
+    "logs"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/MikeyBurkman/fhclogs.git"
+  },
+  "dependencies": {
+    "fast-levenshtein": "^2.0.6",
+    "nodeproc": "^1.1.0",
+    "rc": "^1.2.1",
+    "yargs": "^7.1.0"
+  },
+  "devDependencies": {
+    "prettier": "^1.2.2"
+  }
+}
