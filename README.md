@@ -49,10 +49,14 @@ The `envs` array contains the names of the environments for your application.
 
 #### Setting up autocompletion (optional -- Linux/OSX only)
 `fhclogs completion >> ~./bashrc`
+
 (If on OSX, you might need to append to ~/.profile)
+
+Note that you'll have to open a new terminal for autocompletion to start working.
 
 ## Running the Tool
 `fhclogs`
+
 This will output the help, listing the available commands
 ```
 Commands:
