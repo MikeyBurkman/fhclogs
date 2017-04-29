@@ -72,8 +72,8 @@ Commands:
   completion                         generate bash completion script
 
 Options:
-  --help  Show help                                                    [boolean]
-
+  --version  Show version number                                       [boolean]
+  --help     Show help                                                 [boolean]
 ```
 
 For example, tailing the logs for an app:
@@ -84,4 +84,4 @@ To get the latest error logs for an app:
 
 `fhclogs latestErr app1 prod`
 
-(You can then pipe the output of this to, for instance, Bunyan, or grep)
+(You can then pipe the output of these to, for instance, Bunyan, or grep)
