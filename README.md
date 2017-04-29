@@ -60,17 +60,28 @@ Note that you'll have to open a new terminal for autocompletion to start working
 This will output the help, listing the available commands
 ```
 Commands:
-  apps                           List all apps found in the config file
-  get <appName> <env> <logName>  Get a log file
-  tail <appName> <env>           Tail the current log file
-  completion                     generate bash completion script
+  apps                               List all apps found in the config file
+  get <appName> <env> <logName>      Get a log file
+  latest <appName> <env> [index]     Gets the latest stdout log file. Optional
+                                     index is a 1-based integer used to get
+                                     previous files
+  latestErr <appName> <env> [index]  Get the latest stderr log file. Optional
+                                     index is a 1-based integer used to get
+                                     previous files
+  tail <appName> <env>               Tail the current log file
+  completion                         generate bash completion script
 
 Options:
   --help  Show help                                                    [boolean]
+
 ```
 
 For example, tailing the logs for an app:
 
 `fhclogs tail service1 test`
+
+To get the latest error logs for an app:
+
+`fhclogs latestErr app1 prod`
 
 (You can then pipe the output of this to, for instance, Bunyan, or grep)
