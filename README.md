@@ -5,7 +5,7 @@ Utility for easier viewing of RHMAP logs
 
 ## Set UP
 
-#### RC files
+### RC files
 First, you need to create a `.fhclogsrc` file somewhere, ideally in your home directory. 
 
 This file makes it so you don't have to memorize service IDs. It also allows this tool to have autocompletion.
@@ -33,7 +33,7 @@ The `apps` object is a mapping of app/service names (these can be literally what
 
 The `envs` array contains the names of the environments for your application.
 
-#### Installing and Initializing `fhc`
+### Installing and Initializing `fhc`
 1. You must install `fhc` from npm first:
 `npm i -g fh-fhc@latest-2`
 
@@ -44,15 +44,19 @@ The `envs` array contains the names of the environments for your application.
 `fhc login`
 (It will ask you for your credentials)
 
-#### Installing `fhclogs`
+### Installing `fhclogs`
 `npm i -g MikeyBurkman/fhclogs`
 
-#### Setting up autocompletion (optional -- Linux/OSX only)
+### Setting up autocompletion (optional -- Linux/OSX only)
 `fhclogs completion >> ~./bashrc`
+
 (If on OSX, you might need to append to ~/.profile)
+
+Note that you'll have to open a new terminal for autocompletion to start working.
 
 ## Running the Tool
 `fhclogs`
+
 This will output the help, listing the available commands
 ```
 Commands:
