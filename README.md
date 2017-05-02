@@ -24,7 +24,8 @@ An example rc file:
         "test",
         "pre-prod",
         "prod"
-    ]
+    ],
+    "pipeTo": "bunyan -o short"
 }
 ```
 The `apps` object is a mapping of app/service names (these can be literally whatever you want) to their service IDs. 
@@ -32,6 +33,8 @@ The `apps` object is a mapping of app/service names (these can be literally what
 (These IDs are what you would normally use when calling `fhc app logs --app=XXXXX`.)
 
 The `envs` array contains the names of the environments for your application.
+
+The `pipeTo` string is optional, and is not supported on Windows. The output from log files will be piped to this command.
 
 ### Installing and Initializing `fhc`
 1. You must install `fhc` from npm first:
