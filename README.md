@@ -25,7 +25,7 @@ An example rc file:
         "pre-prod",
         "prod"
     ],
-    "pipeTo": "bunyan -o short"
+    "pipeTo": "bunyan -o short --color"
 }
 ```
 The `apps` object is a mapping of app/service names (these can be literally whatever you want) to their service IDs. 
